@@ -30,6 +30,6 @@ public class DemoControllerTests {
 	  @Test
 	  public void demoMethodShouldReturnTestMessage() throws Exception {
 		  this.mockMvc.perform(get("/demo")).andDo(print()).andExpect(status().isOk())
-			.andExpect(content().string(containsString("<h1>This is a test message from Demo application</h1>")));
+			.andExpect(content().string(containsString("<h1>This is the testing message from Demo application</h1>")));
 	  }
 }
